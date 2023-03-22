@@ -11,4 +11,11 @@ export default defineNuxtConfig({
             "    return url;\n" +
             "  }"
     }, 
+    app: {
+        head: {
+            script: [
+                {src: "https://consent.cookiebot.com/uc.js", type: "text/partytown", async: true, id: "Cookiebot", "data-cbid": "xxxxx-xxxxx-xxxxx"}
+            ]
+        }
+    }
 })
